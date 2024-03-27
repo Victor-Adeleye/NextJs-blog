@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export function generateStaticParams() {
-  const posts = getSortedPostsData();
+  const posts = getSortedPostsData(); //deduped!
 
   return posts.map((post) => ({
     postId: post.id,
@@ -45,7 +45,9 @@ export default async function Post({ params }: { params: { postId: string } }) {
       <article>
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
         <p>
-          <Link href="/">← Back to home</Link>
+          <Link href="/" style={{ color: "white" }}>
+            ← Back to home
+          </Link>
         </p>
       </article>
     </main>

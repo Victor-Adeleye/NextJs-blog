@@ -6,7 +6,7 @@ export default function Home() {
       <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
         Hello, Welcome 👋&nbsp;
         <span className="whitespace-nowrap"></span>
-        I'm <span className="font-bold">Victor.</span>
+        I&nbsp;m <span className="font-bold">Victor.</span>
         <br />
         <span className="whitespace-nowrap">1% crazy Developer</span>
       </p>

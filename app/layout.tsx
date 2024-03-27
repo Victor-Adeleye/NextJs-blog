@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import MyProfilePic from "./components/MyProfilePic";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "Victor's Blog",
   description: "Created by Victor Adeleye",
 };
@@ -18,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "#374151" }}>
+      <body className="dark:bg-slate" style={{ backgroundColor: "#475569" }}>
         <Navbar />
         <MyProfilePic />
         {children}
